@@ -18,12 +18,12 @@ const Users = () => {
     return (
         <div>
             
-            <ul>
+            <div className="list">
                 {users.map((user) =>(
-                   <Card  user={user} key={user.id}/>
+                   <Card  users={user} key={user.id}/>
      
                 ))}
-            </ul>
+            </div>
         </div>
     )
 }
